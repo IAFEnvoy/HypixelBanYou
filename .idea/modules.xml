@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/gate-plugin-template.iml" filepath="$PROJECT_DIR$/.idea/gate-plugin-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HypixelBanYou.iml" filepath="$PROJECT_DIR$/.idea/HypixelBanYou.iml" />
     </modules>
   </component>
 </project>

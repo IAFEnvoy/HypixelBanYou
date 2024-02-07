@@ -9,7 +9,6 @@ import (
 	"github.com/robinbraemer/event"
 	"go.minekube.com/common/minecraft/color"
 	c "go.minekube.com/common/minecraft/component"
-	"go.minekube.com/gate/pkg/edition/java/proto/version"
 	"go.minekube.com/gate/pkg/edition/java/proxy"
 )
 
@@ -27,19 +26,18 @@ var Plugin = proxy.Plugin{
 }
 
 func onPing() func(*proxy.PingEvent) {
-	line2 := mini.Gradient(
-		"Join, test and extend your Gate proxy!",
+	line1 := mini.Gradient(
+		"Speed IP for Hypixel for free!\n",
 		c.Style{Bold: c.True},
-		*color.Yellow.RGB, *color.Gold.RGB, *color.Red.RGB,
+		*color.Red.RGB, *color.Gold.RGB, *color.Yellow.RGB, *color.Green.RGB, *color.Blue.RGB, *color.DarkPurple.RGB,
+	)
+	line2 := mini.Gradient(
+		fmt.Sprintf("Powered By Ficer Studio and Rick"),
+		c.Style{},
+		*color.White.RGB, *color.Black.RGB,
 	)
 
 	return func(e *proxy.PingEvent) {
-		clientVersion := version.Protocol(e.Connection().Protocol())
-		line1 := mini.Gradient(
-			fmt.Sprintf("Hey %s user!\n", clientVersion),
-			c.Style{},
-			*color.White.RGB, *color.LightPurple.RGB,
-		)
 		p := e.Ping()
 		p.Description = Join(line1, line2)
 		p.Players.Max = p.Players.Online + 1
