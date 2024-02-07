@@ -1,0 +1,56 @@
+cheating:
+  #temporary permanent blocked
+  mode: temporary
+  message: Cheating through the use of unfair game advantages.
+  #Only h,m,s allowed, used when mode=temporary
+  time: 719h59m59s
+  has_ban_id: 1
+  extra:
+boosting:
+  mode: temporary
+  message: Boosting your account to improve your stats.
+  time: 719h59m59s
+  has_ban_id: 1
+  extra:
+ipban:
+  mode: permanent
+  message: Suspicious activity has been detected on your account.
+  time: 0
+  has_ban_id: 1
+  extra:
+chat:
+  mode: temporary
+  message: Extreme Chat Infraction.
+  time: 719h59m59s
+  has_ban_id: 1
+  extra:
+nmsl:
+  mode: temporary
+  message: Say NMSL to Hypixel.
+  time: 719h59m59s
+  has_ban_id: 1
+  extra:
+skyblock:
+  mode: temporary
+  message: Boosting detected on one or multiple SkyBlock profiles.
+  time: 719h59m59s
+  has_ban_id: 1
+  extra:
+blacklist:
+  mode: permanent
+  message: Known member of cheating communities and distributing cheating software.
+  time: 0
+  has_ban_id: 1
+  extra:
+youtube:
+  mode: temporary
+  message: Please contact creators@hypixel.net for assistance.
+  time: 719h59m59s
+  has_ban_id: 1
+  extra:
+bad-name:
+  mode: blocked
+  message: Your username, %ign%, is not allowed on the server and is breaking our rules.
+  time: 0
+  has_ban_id: 0
+  extra: §cPlease change your Minecraft username before trying to join again.
